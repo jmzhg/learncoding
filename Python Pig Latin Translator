@@ -1,0 +1,16 @@
+pyg = 'ay'
+
+#Asking the user to input a word.
+original = raw_input('Enter a word:')
+
+#Parameter set if word user entered has a length greather than 0 and if it's alphanumeric.
+if len(original) > 0 and original.isalpha():
+  #It would return the word user entered in lowercase
+  word = original.lower()
+  #first letter of the word user entered
+  first = word[0]
+  new_word = word + first + pyg
+  #Set slice so it will print second index of word user entered + rest of the letters
+  print new_word[1:]
+else:
+    print 'Please enter an alphabetic word'
